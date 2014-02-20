@@ -1,0 +1,10 @@
+{
+	"app_view_engine"		: "ejs",
+	"mysql_database"		: "database",
+	"mysql_user"			: "username",
+	"mysql_password"		: "password",
+	"mysql_port"			: 3306,
+	"mysql_session_store"	: "session_store",
+	"dialect"				: "mysql",
+	"session_key"			: "shhhhhhhhhhh!"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "sequelize-starter-kit",
+  "version": "1.0.0",
+  "description": "A starter kit to develop Express applications with MySQL database support with Sequelize.",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "~0.8.5",
+    "connect-mysql-session": "~0.1.3",
+    "express": "~3.4.8",
+    "sequelize": "~1.7.0-rc6",
+    "mysql": "~2.1.0",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test/stub.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rijkaardorisme/sequelize-starter-kit.git"
+  },
+  "keywords": [
+    "sequelize",
+    "express",
+    "connect",
+    "mysql"
+  ],
+  "author": "Rijkaard Orismé",
+  "license": "MIT-License",
+  "bugs": {
+    "url": "https://github.com/rijkaardorisme/sequelize-starter-kit/issues"
+  },
+  "homepage": "https://github.com/rijkaardorisme/sequelize-starter-kit"
+}
