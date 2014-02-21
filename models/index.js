@@ -2,22 +2,22 @@
 // Add Sequelize models to the project
 // http://sequelizejs.com/articles/express
 
-var fs			= require('fs');
-var path		= require('path');
-var Sequelize	= require('sequelize');
-var lodash		= require('lodash');
-var config		= require('../config');
-var db			= {};
+var fs = require('fs');
+var path = require('path');
+var Sequelize = require('sequelize');
+var lodash = require('lodash');
+var config = require('../config');
+var db = {};
 
-DATABASE		= config.mysql_database;
-PORT			= config.mysql_port;
-USERNAME		= config.mysql_user;
-PASSWORD		= config.mysql_password;
-DIALECT 		= config.dialect;
+DATABASE = config.mysql_database;
+PORT = config.mysql_port;
+USERNAME = config.mysql_user;
+PASSWORD = config.mysql_password;
+DIALECT = config.dialect;
 
-var sequelize	= new Sequelize(DATABASE, USERNAME, PASSWORD, {
-	dialect		: DIALECT,
-	port		: PORT
+var sequelize = new Sequelize(DATABASE, USERNAME, PASSWORD, {
+	dialect: DIALECT,
+	port: PORT
 });
 
 fs

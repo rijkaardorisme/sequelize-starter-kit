@@ -3,22 +3,22 @@
  * Module dependencies.
  */
 
-var express				= require('express');
-var http				= require('http');
-var path				= require('path');
-var MySQLSessionStore	= require('connect-mysql-session')(express);
-var config				= require('./config');
-var routes				= require('./routes');
-var user				= require('./routes/user');
-var db					= require('./models');
+var express = require('express');
+var http = require('http');
+var path = require('path');
+var MySQLSessionStore = require('connect-mysql-session')(express);
+var config = require('./config');
+var routes = require('./routes');
+var user = require('./routes/user');
+var db = require('./models');
 
-var app 				= express();
+var app = express();
 
-VIEW_ENGINE				= config.app_view_engine;
-SESSION_STORE			= config.mysql_session_store;
-SESSION_KEY				= config.session_key;
-USERNAME				= config.mysql_user;
-PASSWORD				= config.mysql_password;
+VIEW_ENGINE = config.app_view_engine;
+SESSION_STORE = config.mysql_session_store;
+SESSION_KEY = config.session_key;
+USERNAME = config.mysql_user;
+PASSWORD = config.mysql_password;
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -34,8 +34,8 @@ app.use(express.cookieParser());
 
 // add session support
 app.use(express.session({
-	store	: new MySQLSessionStore(SESSION_STORE, USERNAME, PASSWORD),
-	secret	: SESSION_KEY
+	store: new MySQLSessionStore(SESSION_STORE, USERNAME, PASSWORD),
+	secret: SESSION_KEY
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -46,22 +46,22 @@ app.use(function (error, req, res, next) {
 	if (error instanceof NotFound) {
 		res.render('app/404', {
 			locals: {
-				title			: '404',
-				description		: '',
-				author			: '',
-				analyticssiteid	: 'XXXXXXX',
-				status			: 404
+				title: '404',
+				description: '',
+				author: '',
+				analyticssiteid: 'XXXXXXX',
+				status: 404
 			}
 		});
 	} else {
 		res.render('app/500', {
 			locals: {
-				title			: '500',
-				description		: '',
-				author			: '',
-				analyticssiteid	: 'XXXXXXX',
-				error			: error,
-				status			: 500
+				title: '500',
+				description: '',
+				author: '',
+				analyticssiteid: 'XXXXXXX',
+				error: error,
+				status: 500
 			}
 		});
 	}
