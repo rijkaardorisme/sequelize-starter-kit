@@ -1,5 +1,4 @@
-Sequelize Starter Kit
-===================
+# Sequelize Starter Kit
 
 A starter kit to develop Express applications with MySQL database support with Sequelize.
 
@@ -42,9 +41,7 @@ You will need to have a running instance of MySQL database to start the new app.
 * password (*MySQL password*)
 * instance port (*MySQL server port*)
 * session store (*the database to store session keys*)
-* session key (*optional*)
 
 You are now ready to run your new app:
 
 		node app
-
