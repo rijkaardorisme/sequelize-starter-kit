@@ -1,6 +1,6 @@
 # Sequelize Starter Kit
 
-A starter kit to develop Express applications with MySQL database support with Sequelize.
+A starter kit to develop Express applications with SQL database support; MySQL, MariaDB, SQLite or PostgreSQL using Sequelizejs ORM (Object-Relational-Mapper).
 
 ## What's included
 
