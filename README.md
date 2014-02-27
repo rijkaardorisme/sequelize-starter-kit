@@ -1,6 +1,6 @@
 # Sequelize Starter Kit
 
-A starter kit to develop Express applications with SQL database support; MySQL, MariaDB, SQLite or PostgreSQL using Sequelizejs ORM (Object-Relational-Mapper).
+A starter kit to develop Express applications with SQL database support; MySQL, MariaDB, SQLite or PostgreSQL using Sequelize ORM (Object-Relational-Mapper). MySQL is configured by default, but it can be easily modified to work with the database server of your choice.
 
 ## What's included
 
@@ -32,16 +32,18 @@ You might need to make the file executable on UNIX systems before you can run it
 
 This will install the dependencies, setup the config file and initialize a fresh new git repository within which you can build your next big thing.
 
-## MySQL setup
+## Database setup
 
-You will need to have a running instance of MySQL database to start the new app. Add your MySQL credentials to the `config.json` file. The required informations are:
+You will need to have a running instance of one of the supported database server to start the new app. Add your database user credentials to the `config.json` file. The required informations are:
 
-* database name (*MySQL database*)
-* username (*MySQL user*)
-* password (*MySQL password*)
-* instance port (*MySQL server port*)
-* session store (*the database to store session keys*)
+* database name
+* username
+* password
+* instance port
+* session store
 
 You are now ready to run your new app:
 
 		node app
+
+Go to `http://localhost:3000`, you will see the traditional Express application startpage, but with lot of awesome things under the hood.
